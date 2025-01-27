@@ -1,6 +1,7 @@
 
-const User = require('../models/UserModel')
-const Order = require('../models/OrderModel')
+var mongoose = require('mongoose')
+const User = mongoose.model('User');
+const Order = mongoose.model('Order')
 
 async function orderUser(req,res){
     try {
